@@ -75,10 +75,10 @@ export default function MissionPage() {
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
         >
-          <p className="complete-tag">MISSION COMPLETE</p>
+          <p className="complete-tag">Where is she ...Maybe somewhere near Uppara Street😂</p>
 
           <h2 className="complete-title">
-            We Found Her! 🎉
+            I think this info will help to find here🎉
           </h2>
 
           <p className="complete-subtitle">
