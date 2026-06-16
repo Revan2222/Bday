@@ -156,7 +156,7 @@ export default function MissionPage() {
                   Often fight with her friends.
                   May become slightly dangerous when hungry.
                   Approach with cake, gifts and compliments. 
-                  
+
                   Unga peru Revan illama irutha sari nega safe uh😂
                 </p>
               </div>
@@ -168,7 +168,7 @@ export default function MissionPage() {
             <div className="profile-image">
 
               <img
-                src="src/Images/birthday-girl.png"
+                src="public/Images/birthday-girl.png"
                 alt="Birthday Girl"
               />
 

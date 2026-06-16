@@ -53,7 +53,7 @@ export default function SpacePage() {
           <div className="qr-glow" />
 
           <img
-            src="src/Images/NASA Image.png"
+            src="public/Images/NASA Image.png"
             alt="Birthday Surprise QR"
             className="qr-image"
           />
