@@ -1,0 +1,397 @@
+
+/* ===================================
+   MISSION PAGE
+=================================== */
+
+.mission-page {
+  position: relative;
+  overflow: hidden;
+
+  background:
+    radial-gradient(circle at top, rgba(139,92,246,.25), transparent 30%),
+    linear-gradient(
+      180deg,
+      #081120 0%,
+      #0f1f3d 50%,
+      #172a54 100%
+    );
+
+  color: white;
+}
+
+/* ===================================
+   BACKGROUND
+=================================== */
+
+.mission-bg {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.stars {
+  position: absolute;
+  inset: 0;
+
+  background-image:
+    radial-gradient(circle at 10% 20%, rgba(255,255,255,.9) 1px, transparent 2px),
+    radial-gradient(circle at 30% 70%, rgba(255,255,255,.8) 1px, transparent 2px),
+    radial-gradient(circle at 70% 15%, rgba(255,255,255,.9) 1px, transparent 2px),
+    radial-gradient(circle at 80% 40%, rgba(255,255,255,.7) 1px, transparent 2px),
+    radial-gradient(circle at 90% 80%, rgba(255,255,255,.8) 1px, transparent 2px);
+}
+
+.moon {
+  position: absolute;
+
+  top: 80px;
+  right: 8%;
+
+  width: 140px;
+  height: 140px;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle,
+      #fff 0%,
+      #f8f4d6 50%,
+      #ece4b7 100%
+    );
+
+  box-shadow:
+    0 0 50px rgba(255,255,255,.35);
+}
+
+/* ===================================
+   HERO SECTION
+=================================== */
+
+.mission-hero {
+  position: relative;
+  z-index: 2;
+
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 6rem 1.5rem;
+  text-align: center;
+}
+
+.mission-title {
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-weight: 800;
+
+  margin-bottom: 2rem;
+
+  color: white;
+
+  text-shadow:
+    0 0 20px rgba(255,255,255,.25);
+}
+
+/* ===================================
+   CLUES
+=================================== */
+
+.clue-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  gap: 1.5rem;
+
+  max-width: 900px;
+
+  margin-top: 2rem;
+}
+
+.clue-card {
+  width: 230px;
+
+  padding: 1.5rem;
+
+  border-radius: 24px;
+
+  background:
+    rgba(255,255,255,.08);
+
+  border:
+    1px solid rgba(255,255,255,.15);
+
+  box-shadow:
+    0 15px 30px rgba(0,0,0,.25);
+
+  backdrop-filter: blur(10px);
+}
+
+.clue-number {
+  display: inline-block;
+
+  padding: .35rem .9rem;
+
+  border-radius: 999px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #8b5cf6,
+      #6d28d9
+    );
+
+  font-size: .85rem;
+  font-weight: 700;
+
+  margin-bottom: 1rem;
+}
+
+.clue-card p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* ===================================
+   MISSION COMPLETE
+=================================== */
+
+.mission-complete {
+  margin-top: 4rem;
+}
+
+.complete-tag {
+  font-size: .9rem;
+  font-weight: 700;
+
+  letter-spacing: 3px;
+
+  color: #fbbf24;
+}
+
+.complete-title {
+  font-size: clamp(2rem, 6vw, 4rem);
+
+  margin: .5rem 0;
+
+  color: white;
+}
+
+.complete-subtitle {
+  opacity: .8;
+}
+
+/* ===================================
+   PROFILE SECTION
+=================================== */
+
+.profile-section {
+  position: relative;
+  z-index: 2;
+
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding:
+    4rem
+    1.5rem
+    8rem;
+}
+
+/* ===================================
+   PROFILE CARD
+=================================== */
+
+.profile-card {
+  width: min(1100px, 95vw);
+
+  border-radius: 30px;
+
+  overflow: hidden;
+
+  background:
+    rgba(255,255,255,.08);
+
+  border:
+    1px solid rgba(255,255,255,.15);
+
+  backdrop-filter: blur(12px);
+
+  box-shadow:
+    0 25px 60px rgba(0,0,0,.35);
+}
+
+.profile-header {
+  padding: 1.2rem;
+
+  text-align: center;
+
+  font-weight: 800;
+
+  letter-spacing: 3px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #8b5cf6,
+      #6d28d9
+    );
+
+  color: white;
+}
+
+/* ===================================
+   CONTENT
+=================================== */
+
+.profile-content {
+  display: flex;
+  align-items: center;
+
+  gap: 3rem;
+
+  padding: 3rem;
+}
+
+/* ===================================
+   LEFT INFO
+=================================== */
+
+.profile-info {
+  flex: 1;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 1rem;
+
+  padding: 1rem 0;
+
+  border-bottom:
+    1px dashed rgba(255,255,255,.15);
+}
+
+.info-row span {
+  color:
+    rgba(255,255,255,.7);
+}
+
+.info-row strong {
+  color: white;
+  text-align: right;
+}
+
+/* ===================================
+   NOTE BOX
+=================================== */
+
+.fun-note {
+  margin-top: 2rem;
+
+  padding: 1.25rem;
+
+  border-radius: 18px;
+
+  background:
+    rgba(255,255,255,.06);
+
+  border:
+    1px solid rgba(255,255,255,.08);
+}
+
+.fun-note h4 {
+  margin-top: 0;
+  margin-bottom: .8rem;
+
+  color: #fbbf24;
+}
+
+.fun-note p {
+  margin: 0;
+
+  line-height: 1.7;
+
+  color:
+    rgba(255,255,255,.85);
+}
+
+/* ===================================
+   IMAGE
+=================================== */
+
+.profile-image {
+  width: 320px;
+  flex-shrink: 0;
+}
+
+.profile-image img {
+  width: 100%;
+  display: block;
+
+  border-radius: 24px;
+
+  object-fit: cover;
+
+  box-shadow:
+    0 15px 35px rgba(0,0,0,.35);
+
+  border:
+    3px solid rgba(255,255,255,.15);
+}
+
+/* ===================================
+   MOBILE
+=================================== */
+
+@media (max-width: 900px) {
+
+  .profile-content {
+    flex-direction: column-reverse;
+    text-align: left;
+  }
+
+  .profile-image {
+    width: 260px;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .mission-title {
+    font-size: 2rem;
+  }
+
+  .clue-card {
+    width: 100%;
+  }
+
+  .profile-content {
+    padding: 1.5rem;
+  }
+
+  .info-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .info-row strong {
+    text-align: left;
+  }
+
+  .profile-image {
+    width: 220px;
+  }
+
+}
+

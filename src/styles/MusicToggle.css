@@ -1,0 +1,26 @@
+.music-toggle {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  z-index: var(--z-overlay);
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--white);
+  border: 3px solid var(--ink);
+  box-shadow: var(--shadow-soft);
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 600px) {
+  .music-toggle {
+    width: 46px;
+    height: 46px;
+    font-size: 1.3rem;
+    bottom: 1rem;
+    right: 1rem;
+  }
+}

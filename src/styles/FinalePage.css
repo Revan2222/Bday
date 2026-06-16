@@ -1,0 +1,358 @@
+
+/* ==========================================
+   FINALE PAGE
+   Grand Birthday Ending 🌙🎂
+========================================== */
+
+.finale-page {
+  position: relative;
+  overflow: hidden;
+
+  min-height: 100vh;
+
+  padding:
+    6rem
+    1.5rem
+    8rem;
+
+  background:
+    radial-gradient(
+      circle at top,
+      rgba(139,92,246,.18),
+      transparent 30%
+    ),
+    linear-gradient(
+      180deg,
+      #050816 0%,
+      #0b1026 40%,
+      #172a54 100%
+    );
+
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ==========================================
+   STARS BACKGROUND
+========================================== */
+
+.finale-stars {
+  position: absolute;
+  inset: 0;
+
+  pointer-events: none;
+
+  background-image:
+    radial-gradient(circle at 8% 15%, rgba(255,255,255,.9) 1px, transparent 2px),
+    radial-gradient(circle at 18% 65%, rgba(255,255,255,.7) 1px, transparent 2px),
+    radial-gradient(circle at 30% 30%, rgba(255,255,255,.9) 1px, transparent 2px),
+    radial-gradient(circle at 50% 10%, rgba(255,255,255,.8) 1px, transparent 2px),
+    radial-gradient(circle at 65% 75%, rgba(255,255,255,.8) 1px, transparent 2px),
+    radial-gradient(circle at 78% 22%, rgba(255,255,255,.9) 1px, transparent 2px),
+    radial-gradient(circle at 92% 60%, rgba(255,255,255,.8) 1px, transparent 2px);
+
+  opacity: .7;
+}
+
+/* ==========================================
+   TITLE
+========================================== */
+
+.finale-title {
+  position: relative;
+  z-index: 2;
+
+  font-size: clamp(2.2rem, 6vw, 4.5rem);
+
+  text-align: center;
+
+  margin-bottom: 2rem;
+
+  color: white;
+
+  text-shadow:
+    0 0 20px rgba(255,255,255,.2);
+}
+
+/* ==========================================
+   CAKE
+========================================== */
+
+.cake-section {
+  position: relative;
+  z-index: 2;
+
+  margin-bottom: 2rem;
+}
+
+.cake-emoji {
+  font-size: clamp(5rem, 10vw, 8rem);
+
+  filter:
+    drop-shadow(0 0 20px rgba(251,191,36,.3));
+}
+
+/* ==========================================
+   HAPPY BIRTHDAY
+========================================== */
+
+.birthday-heading {
+  position: relative;
+  z-index: 2;
+
+  text-align: center;
+
+  font-size: clamp(1.2rem, 3vw, 1.8rem);
+
+  letter-spacing: 6px;
+
+  color: #fbbf24;
+
+  margin-bottom: .8rem;
+}
+
+.birthday-name {
+  position: relative;
+  z-index: 2;
+
+  text-align: center;
+
+  font-size: clamp(2.8rem, 8vw, 6rem);
+
+  font-weight: 800;
+
+  margin-bottom: 3rem;
+
+  background:
+    linear-gradient(
+      135deg,
+      #ffffff,
+      #fbbf24
+    );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  background-clip: text;
+}
+
+/* ==========================================
+   MESSAGE CARD
+========================================== */
+
+.birthday-message-card {
+  position: relative;
+  z-index: 2;
+
+  width: min(750px, 95vw);
+
+  padding: 2rem;
+
+  border-radius: 30px;
+
+  background:
+    rgba(255,255,255,.08);
+
+  border:
+    1px solid rgba(255,255,255,.12);
+
+  backdrop-filter: blur(12px);
+
+  box-shadow:
+    0 20px 50px rgba(0,0,0,.25);
+
+  margin-bottom: 3rem;
+}
+
+.birthday-message-card h3 {
+  margin-bottom: 1rem;
+
+  text-align: center;
+
+  color: #fbbf24;
+
+  font-size: 1.4rem;
+}
+
+.birthday-message-card p {
+  margin: 0;
+
+  text-align: center;
+
+  line-height: 1.9;
+
+  color:
+    rgba(255,255,255,.88);
+
+  font-size: 1.05rem;
+}
+
+/* ==========================================
+   BUTTON SECTION
+========================================== */
+
+.final-button-section {
+  position: relative;
+  z-index: 2;
+
+  margin-bottom: 3rem;
+}
+
+.celebrate-button {
+  border: none;
+
+  cursor: pointer;
+
+  padding:
+    1rem
+    2.2rem;
+
+  border-radius: 999px;
+
+  font-size: 1.1rem;
+  font-weight: 700;
+
+  color: white;
+
+  background:
+    linear-gradient(
+      135deg,
+      #8b5cf6,
+      #6d28d9
+    );
+
+  box-shadow:
+    0 12px 30px rgba(109,40,217,.35);
+
+  transition:
+    transform .25s ease,
+    box-shadow .25s ease;
+}
+
+.celebrate-button:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 18px 35px rgba(109,40,217,.45);
+}
+
+/* ==========================================
+   CELEBRATION CARD
+========================================== */
+
+.celebration-card {
+  position: relative;
+  z-index: 2;
+
+  width: min(700px, 95vw);
+
+  padding: 2.5rem;
+
+  border-radius: 32px;
+
+  text-align: center;
+
+  background:
+    rgba(255,255,255,.08);
+
+  border:
+    1px solid rgba(255,255,255,.15);
+
+  backdrop-filter: blur(12px);
+
+  box-shadow:
+    0 25px 60px rgba(0,0,0,.3);
+}
+
+.celebration-card h2 {
+  margin-bottom: 1.2rem;
+
+  font-size: clamp(2rem, 5vw, 3rem);
+
+  color: #fbbf24;
+}
+
+.celebration-card p {
+  line-height: 1.8;
+
+  color:
+    rgba(255,255,255,.85);
+
+  margin-bottom: 1rem;
+}
+
+.celebration-name {
+  margin-top: 1.5rem;
+
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+
+  font-weight: 700;
+
+  color: white;
+}
+
+.the-end {
+  margin-top: 2rem;
+
+  font-size: 1.2rem;
+
+  color: #fbbf24;
+
+  letter-spacing: 2px;
+}
+
+/* ==========================================
+   CONFETTI
+========================================== */
+
+canvas {
+  position: fixed !important;
+  inset: 0;
+  pointer-events: none;
+  z-index: 999;
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 768px) {
+
+  .birthday-message-card,
+  .celebration-card {
+    padding: 1.5rem;
+  }
+
+  .birthday-message-card p,
+  .celebration-card p {
+    font-size: .95rem;
+  }
+
+  .birthday-heading {
+    letter-spacing: 3px;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .finale-page {
+    padding:
+      5rem
+      1rem
+      6rem;
+  }
+
+  .birthday-name {
+    font-size: 3rem;
+  }
+
+  .cake-emoji {
+    font-size: 5rem;
+  }
+
+}
+
