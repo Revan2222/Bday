@@ -168,7 +168,7 @@ export default function MissionPage() {
             <div className="profile-image">
 
               <img
-                src="/Images/birthday-girl.png"
+                src="/Images/birthday-girl.jpg"
                 alt="Birthday Girl"
               />
 
